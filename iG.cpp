@@ -1,16 +1,10 @@
-#include<bits/stdc++.h>
-using namespace std;
-
-const long long MAXN=114519;
-
-long long n;
+/*
+ * Write your data generator here. Do not output to files.
+ */
 
 int main(){
-	long long i,j;
-	n=rand()%10+(MAXN-9);
-	cout<<n<<endl;
-	for(i=0;i<n;i++)
-		cout<<rand()%4+1;
-	cout<<endl;
+	srand(time(NULL));
+	//your code here
+	
 	return 0;
 }
