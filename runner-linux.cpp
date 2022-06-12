@@ -27,7 +27,29 @@ int main(){
 	long long i,j;
 	system("rm -r data");
 	system("mkdir data");
-	gen(1,25,"iG");
-	solve(1,25);
+
+	for(i=1;;i++){
+		long long start,end;
+		char program[20];
+
+		cout<<"================= "<<i<<" ===================\n";
+		cout<<"Enter start ID. (-1 to end)\n";
+		cin>>start;
+		cout<<"Enter end ID.\n";
+		cin>>end;
+		cout<<"Enter program.\n";
+		cin>>program;
+		cout<<"Generating...\n";
+		gen(start,end,program);
+		cout<<"Generation finished.\n";
+	}
+
+	long long start,end;
+	cout<<"Enter solve start ID.\n";
+	cin>>start;
+	cout<<"Enter solve end ID.\n";
+	cin>>end;
+	solve(start,end);
+
 	return 0;
 }
