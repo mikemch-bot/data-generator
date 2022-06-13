@@ -35,6 +35,8 @@ int main(){
 		cout<<"================= "<<i<<" ===================\n";
 		cout<<"Enter start ID. (-1 to end)\n";
 		cin>>start;
+		if(start==-1)
+			break;
 		cout<<"Enter end ID.\n";
 		cin>>end;
 		cout<<"Enter program.\n";
