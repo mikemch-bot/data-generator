@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-#include"lib/tools.h"
+#include"../../lib/tools.h"
 using namespace std;
 
 /*
