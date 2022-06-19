@@ -1,12 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
+
 int p[1000001];
 int f[1000001];
 int fa[1000001];
 vector<int> y;
 mt19937 rt(time(NULL));
 map<pair<int,int>,bool> e;
-void genDAG(int n,int m,int dep){
+
+void genConnDAG(int n,int m,int dep){
 	for(int i=1;i<=n;i++)p[i]=i;
 	random_shuffle(p+2,p+1+n);
 	for(int i=1;i<=dep;i++)f[i]=1;
@@ -42,7 +44,4 @@ void genDAG(int n,int m,int dep){
 		cout<<p[r1]<<" "<<p[r2]<<endl;
 	}
 	return ;
-}
-int main(){
-	genDAG(7,8,5);
 }
