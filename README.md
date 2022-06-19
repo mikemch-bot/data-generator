@@ -1,6 +1,10 @@
 # data-generator
 这是一个 OI 数据生成器
 
+# 更新内容
+6-19. 开始记录更新内容
+6-19. 完善了 Graygoo 提供的生成连通的 DAG 的函数。
+
 # 数据生成器使用说明
 ## Windows
 1. 安装 WSL 然后按照 Linux 的步骤执行。
